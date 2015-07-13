@@ -65,6 +65,7 @@ retrieveR = var
 main :: IO ()
 main = do
     conn <- connectPostgreSQL ""
+    _ <- execute_ conn createPasteBox
     runSpock 8080 $ spockT id $ do
         middleware (staticPolicy (addBase "static"))
         get root $

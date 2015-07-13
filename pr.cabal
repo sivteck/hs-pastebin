@@ -3,7 +3,7 @@
 
 name:                pr
 version:             0.1.0.0
-synopsis:            WEB DUB BUB
+synopsis:            an simple pastebin
 -- description:         
 homepage:            vasi.in
 license:             BSD3
